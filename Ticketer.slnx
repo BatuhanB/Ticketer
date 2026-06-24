@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Ticketer.Application/Ticketer.Application.csproj" />
+  <Project Path="Ticketer.Domain/Ticketer.Domain.csproj" />
+  <Project Path="Ticketer.Infrastructure/Ticketer.Infrastructure.csproj" />
+  <Project Path="Ticketer.Presentation/Ticketer.Presentation.csproj" />
+</Solution>

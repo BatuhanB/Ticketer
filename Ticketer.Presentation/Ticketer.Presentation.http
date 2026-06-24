@@ -1,0 +1,6 @@
+@Ticketer.Presentation_HostAddress = http://localhost:5149
+
+GET {{Ticketer.Presentation_HostAddress}}/empty/
+Accept: application/json
+
+###
