@@ -19,6 +19,8 @@ public class ShowInventoryConfiguration : IEntityTypeConfiguration<ShowInventory
         builder.Property(s => s.Version)
             .IsRowVersion();
 
+        builder.Ignore(s => s.DomainEvents);
+
         // 2. ENCAPSULATION: Tell EF Core to map the private _seats field, 
         // since the public Seats property is a read-only collection.
         var navigation = builder.Metadata.FindNavigation(nameof(ShowInventory.Seats));

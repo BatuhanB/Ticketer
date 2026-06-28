@@ -1,9 +1,12 @@
-﻿namespace Ticketer.Domain.Common;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Ticketer.Domain.Common;
 
 public abstract class AggregateRoot : Entity
 {
     private readonly List<DomainEvent> _domainEvents = new();
 
+    [NotMapped]
     public IReadOnlyCollection<DomainEvent> DomainEvents => _domainEvents.AsReadOnly();
 
     protected AggregateRoot(Guid id): base(id){}
